@@ -14,6 +14,18 @@ const (
 	fourth = iota
 )
 
+// iota will be resetted at new constant block
+const (
+	fifth = iota
+	sixth
+)
+
+// constant expressions
+const (
+	seventh = iota + 7
+	eighth
+)
+
 func main() {
 	// implicit declaration of a constant
 	const constantValueImplicit = 3
@@ -38,4 +50,8 @@ func main() {
 
 	// using iota
 	fmt.Println(third, fourth)
+
+	fmt.Println(fifth, sixth)
+
+	fmt.Println(seventh, eighth)
 }
