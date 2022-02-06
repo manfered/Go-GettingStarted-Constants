@@ -8,6 +8,12 @@ const (
 	second = "second"
 )
 
+// using iota at constant blocks
+const (
+	third  = iota
+	fourth = iota
+)
+
 func main() {
 	// implicit declaration of a constant
 	const constantValueImplicit = 3
@@ -29,4 +35,7 @@ func main() {
 
 	// using the constant values from constant block
 	fmt.Println(first, second)
+
+	// using iota
+	fmt.Println(third, fourth)
 }
