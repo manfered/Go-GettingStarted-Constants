@@ -2,6 +2,12 @@ package main
 
 import "fmt"
 
+// constant blocks
+const (
+	first  = 1
+	second = "second"
+)
+
 func main() {
 	// implicit declaration of a constant
 	const constantValueImplicit = 3
@@ -20,4 +26,7 @@ func main() {
 	// cast the constant value to float32
 	// otherwise we would have compilation error
 	fmt.Println(float32(constantValueExplicit) + 2.2)
+
+	// using the constant values from constant block
+	fmt.Println(first, second)
 }
